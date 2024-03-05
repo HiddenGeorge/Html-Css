@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Flexible image</title>
+</head>
+<body>
+    <h1>Flexible image</h1>
+    <p>Are you seeing the full image? Try to increase the size of your window to enjoy the best experience! &#x1F92F</p>
+    <picture>
+        <source media="(min-width: 1230px)" srcset="images/img_g.png" type="image/png">
+        <source media="(min-width: 830px)" srcset="images/img_m.png" type="image/png">
+        <img src="images/img_p.png" alt="Flexible image">
+    </picture>
+</body>
+</html>

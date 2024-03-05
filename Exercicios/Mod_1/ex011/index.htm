@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media in HTML5</title>
+</head>
+<body>
+    <h1>Dynamic image</h1>
+    <p>Try to open this site in several different devices or simply increase and decrease the size of your browse.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto_p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto_m.png" type="image/png">
+        <img src="imagens/foto_g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>reproducing audio</h1>
+    <p>Let's learn to reproduce audio in HTML5</p>
+    <h2>First type</h2>
+    <audio src="media/colony.mp3" controls autoplay></audio> <br>
+    <audio src="media/memory_of_jean.mp3" controls></audio>
+    <h2>Second type</h2>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="media/helium.mp3" type="audio/mpeg">
+        <source src="media/helium.ogg" type="audio/ogg">
+        <source src="media/helium.wav" type="audio/wav">
+        <p>Sadly, your browser can't reproduce audio. 
+        <a href="media/helium.mp3">Click here to download the MP3 file</a>
+        </p>
+    </audio>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(241, 240, 162);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: rgb(46, 33, 6);
+}
+
+h1#main {
+    text-align: center;
+    font-weight: 2em;
+    color: rgb(0, 0, 0);
+}
+
+h2.basic {
+    color: red;
+}
+
+.intermediary {
+    color: green;
+}
+
+.advanced {
+    color: blue;
+}

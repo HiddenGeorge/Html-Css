@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos with HTML5</title>
+</head>
+<body>
+    <h1>Inserting hosted videos locally</h1>
+    <p>This video is hosted im my own server</p>
+
+    <h2>First type</h2>
+    <video src="videos/video_squirrel(mp4).mp4" width="500" controls loop></video><br>
+    <video src="videos/video_squirrel.mp4" width="500" controls></video><br>
+    <video src="videos/video_squirrel(webm).webm" width="500" controls></video><br>
+    
+    <h2>Second type</h2>
+    <video poster="images/thumb_squirrel.png" controls width="560">
+        <source src="videos/video_squirrel(mp4).mp4" type="video/mp4">
+        <source src="videos/video_squirrel.mp4" type="video/mp4">
+        <source src="videos/video_squirrel(webm).webm" type="video/webm">
+        <p>Your browser don't have compatibility with the reproduction of videos</p>
+    </video>
+
+    <h1>Inserting videos of Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=IvX5v-0jmWf8lBDL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Inserting videos of Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/173330833?h=f1392d8103&color=c9ff23&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

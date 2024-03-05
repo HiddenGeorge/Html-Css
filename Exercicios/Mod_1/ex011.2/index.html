@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Look at my image</title>
+</head>
+<body>
+    <h1>Look at my image changing the size when you change the size of the window!</h1>
+    <picture>
+        <source media="(min-width: 1230px)" srcset="imagens/red.png" type="image/png">
+        <source media="(min-width: 1030px)" srcset="imagens/orange.png" type="image/png">
+        <source media="(min-width: 830px)" srcset="imagens/yellow.png" type="image/png">
+        <source media="(min-width: 630px)" srcset="imagens/green.png" type="image/png">
+        <img src="imagens/blue.png" alt="Flexible image">
+    </picture>
+</body>
+</html>
