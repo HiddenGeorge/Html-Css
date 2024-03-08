@@ -5,16 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position of background</title>
     <style>
-        div.bloco {
-            height: 100px;
+        body {
+            margin: 0px;
+        }
+
+        div.block {
+            background-image: url(images/wallpaper003.jpg);
+            height: 200px;
             border: 1px solid black;
+            margin: 0px;
+            border-radius: 10px;
+            width: 200px;
+            display: inline-block;
+        }
+        div#q1 {
+            background-position: left top;
+        } 
+        div#q2 {
+            background-position: center top;
+        } 
+        div#q3 {
+            background-position: right top;
+        }
+        div#q4 {
+            background-position: left center;
+        }    
+        div#q5 {
+            background-position: center center;
+        }  
+        div#q6 {
+            background-position: right center;
+        }  
+        div#q7 {
+            background-position: left bottom;
+        }  
+        div#q8 {
+            background-position: center bottom;
+        }  
+        div#q9 {
+            background-position: right bottom;
+        }       
+        main {
+            margin: 0px auto;
+            padding: 0px;
+            width: fit-content;
+        }
+
+        div#point {
+            width: 10px;
+            height: 10px;
+            border: 1px solid black;
+            margin: 0px auto;
+            background-image: url(images/target001.png);
+            background-position: center center;
         }
     </style>
 </head>
 <body>
-    <div class="block"></div>
-    <div class="block"></div>
-    <div class="block"></div>
-    
+    <p><a href="background001.html">001</a></p>
+    <p><a href="background002.html">002</a></p>
+    <p><a href="background004.html">004</a></p>
+
+    <main>
+        <div class="block" id="q1"></div>
+        <div class="block" id="q2"></div>
+        <div class="block" id="q3"></div>
+        <br>
+        <div class="block" id="q4"></div>
+        <div class="block" id="q5"></div>
+        <div class="block" id="q6"></div>
+        <br>
+        <div class="block" id="q7"></div>
+        <div class="block" id="q8"></div>
+        <div class="block" id="q9"></div>
+    </main>
+    <div id="point"></div>
+
 </body>
 </html>
