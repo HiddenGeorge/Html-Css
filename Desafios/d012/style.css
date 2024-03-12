@@ -3,8 +3,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 
+body {
+    margin: 0px;
+}
+
+  header {
+    background-color: black;
+  }
+
+  header > h1 {
+    font-family: 'Passion One';
+    color: white;
+    margin: 0px;
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+    font-size: 8vw;
+  }
+
+  header > h2, header > h2 > a {
+    color: white;
+    margin: 0px;
+    padding: 0px 0px 50px 0px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  a:hover {
+    text-shadow: 0px 0px 10px white;
+  }
 
   main {
     font-family: Sriracha;
+    margin: 0px 30px;
+    font-size: 2.8vw;
   }
-  
+
+  main > div {
+    background-color: black;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    margin: 0px -30px;
+    padding: 15px 0px;
+    height: auto;
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.61);
+  }
+
+  main > div > p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.658);
+    margin: 30px 30px;
+    width: fit-content; 
+  }
+
+  div#img001 {
+    background-image: url('images/background001.jpg');
+  }
+  div#img002 {
+    background-image: url('images/background002.jpg');
+  }
+
+  footer, footer > a {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px 0px;
+  }
