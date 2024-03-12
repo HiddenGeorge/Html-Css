@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical alignment</title>
+    <style>
+        * {
+            margin: 1px solid black;
+        }
+        #container {
+background-image: url('images/target001.png');
+background-size: 100% 100%;
+position: relative;
+height: 600px;
+background-color: brown;
+padding: 10px;
+        }
+        #content {
+background-image: url('images/target001.png');
+background-size: 100% 100%;            
+position: absolute;
+height: 200px; 
+width: 200px;
+background-color: skyblue;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <p><a href="backgroundlinks.html">Links</a></p>
+    <section id="container">
+        <article id="content">
+
+        </article>
+    </section>
+</body>
+</html>
