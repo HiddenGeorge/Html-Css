@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    width: 270px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+div {
+    background-color: rgb(172, 0, 0);
+    color: white;
+    height: 50px;
+    margin: -4px 0px;
+    background-size: cover;
+}
+div > p {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+div:hover {
+    background-color: rgb(255, 0, 0);
+}
