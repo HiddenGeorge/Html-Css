@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@media all {
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color1: purple;
+    --color2: rgb(62, 129, 98);
+}
+
+html, body {
+    background-color: var(--color1);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+main {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
+
+    div#image {
+        height: 200px;
+        background-color: black ;
+        background-image: url('images/trainpath.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+    }
+
+    div#form {
+        padding: 10px;
+        display: block;
+        h1 {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 0.8em;
+            margin-bottom: 10px;
+        }
+        form{
+            div.boxform {
+                background-color: var(--color1);
+                height: 40px;
+                margin-bottom: 10px;
+                width: 100%;
+                border-radius: 10px;
+                label {
+                    display: inline-flex;
+                    padding: 8px 0px 8px 5px;
+                }
+                input {
+                    transform: translateY(-8px);
+                    width: calc(100% - 44px);
+                    border-radius: 5px;
+                    border: none;
+                    height: 25px;
+                    padding-left: 5px;
+                }
+            }
+            input.button{
+                width: 100%;
+                margin: 5px 0px;
+                height: 30px;
+                border: none;
+                border-radius: 10px;
+                background-color: var(--color2);
+            }
+            input.button:hover {
+                background-color: rgb(30, 160, 132);
+                cursor: pointer;
+            }
+        }
+    }
+} 
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    body{
+        background-image: linear-gradient(to bottom, var(--color1), var(--color2));
+    }
+    main{
+        width: 90vw;
+        div#image {
+            float: left;
+            width: 30%;
+            height: 100%;
+        }
+        div#form {
+            float: left;  
+            width: 65%;
+            height: 90%;
+            p {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 993px) {
+    body{
+        background-image: linear-gradient(to bottom, var(--color1), var(--color2));
+    }
+    main{
+        width: 891px;
+        div#image {
+            float: left;
+            width: 50%;
+            height: 100%;
+        }
+        div#form {
+            float: left;   
+            width: 47%;
+            height: 90%;
+            p {
+                font-size: 1.5em;
+            }
+        }
+    }
+}

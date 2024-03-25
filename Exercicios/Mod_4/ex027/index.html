@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+        <main>
+            <div id="image"></div>
+
+
+            <div id="form">
+                <h1>Login</h1>
+                <p>Welcome again, do the login to access your account and do the settings in your enviroment.</p>
+                <form action="register.php" method="post" autocomplete="on">
+        
+                    <div class="boxform">
+                        <label for="i.email">
+                            <span class="material-symbols-outlined">person</span>
+                        </label>
+                        <input type="email" name="email" id="i.email"  
+                        placeholder="Your email" autocomplete="email" required> 
+                    </div>
+
+                    
+
+                    <div class="boxform">
+                        <label for="i.password">
+                            <span class="material-symbols-outlined">key</span>
+                        </label>
+                        <input type="password" name="password" id="i.password"  
+                        placeholder="Your password" autocomplete="current-password" required minlength="6" maxlength="30">
+                    </div>
+                    
+                    <input class="button" type="submit" value="Enter">
+                    
+                    <input class="button" type="submit" value="Forget the password">
+                </form>
+            </div>
+
+
+        </main>
+
+</body>
+</html>
